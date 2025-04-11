@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Essential tags/meta tags for SEO -->
+    <title>Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple personal portfolio website which has home page, projects page, articles page, form based contact page, semantic HTML, navigation bar, SEO meta tags on each page, and proper CSS styling.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://gh-aam.github.io/personal-portfolio/">
+    
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <header>
+      <!-- Fixed div -->
+      <div class="fixed">
+        <!-- Logo and name -->
+        <ul class="ln">
+          <li><img src="logo.png" width="48px" height="48px" alt="Website logo"></li>
+          <li>Abdullah Al Mamun</li>
+        </ul>
+        
+        <!-- Navigation bar -->
+        <ul class="nav-bar">
+          <li><a href="index.html">Home&nbsp;&nbsp;</a></li>
+          <li><a href="projects.html">/&nbsp;&nbsp;Projects&nbsp;&nbsp;</a></li>
+          <li><a href="articles.html">/&nbsp;&nbsp;Articles&nbsp;&nbsp;</a></li>
+          <li><a href="contact.html">/&nbsp;&nbsp;Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Dynamic div -->
+      <div class="dynamic">
+        <h1 class="style-font">Articles</h1>
+      </div>
+    </header>
+    
+    <main class="article-cards">
+      <article>
+        <h3 class="style-font">The Power of Flexbox</h3>
+        <p>Flexbox revolutionized CSS layouts by simplifying alignment and spacing. Forget floats and clearfix hacks — Flexbox’s one-dimensional control lets you distribute elements along a row or column with properties like justify-content and align-items. It’s perfect for navigation bars, card grids, or centering divs effortlessly. Browser support is near-universal now, so ditch the old tricks. Pair it with media queries, and you’ve got a responsive powerhouse in just a few lines of code. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">Why JavaScript Frameworks Matter</h3>
+        <p>JavaScript frameworks like React, Vue, and Angular dominate web development for a reason: they streamline building dynamic, scalable apps. By managing state and rendering efficiently (hello, Virtual DOM), they save you from vanilla JS spaghetti code. React’s component-based architecture, for instance, lets you reuse UI blocks across projects. Sure, there’s a learning curve, but the productivity boost and community support — like npm packages — make them worth it. Pick one and dive in; your future self will approve. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">Optimizing Web Performance</h3>
+        <p>Speed is king in web development. A site that loads in under 2 seconds keeps users happy and boosts conversion rates. Minify CSS and JS, leverage browser caching, and compress images with tools like WebP or TinyPNG. Lazy loading for off-screen assets is a game-changer too. Use Lighthouse in Chrome DevTools to audit and fix bottlenecks — every millisecond shaved off counts when 53% of mobile users abandon slow sites. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">The Rise of CSS Grid</h3>
+        <p>CSS Grid is the 2D layout king, outshining Flexbox for complex designs. Define rows and columns with grid-template-areas, and place items precisely — no more nesting nightmares. It’s ideal for dashboards or magazine-style layouts. Support’s solid across modern browsers, and with fr units, you get proportional sizing without calc() hacks. Combine it with Flexbox for ultimate control; they’re allies, not rivals. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">APIs: The Web's Glue</h3>
+        <p>APIs connect your front-end to the world. Whether fetching weather data or posting to a database, RESTful endpoints with JSON are the standard. Use `fetch()` or Axios for clean, promise-based calls in JavaScript. Authentication via OAuth or API keys keeps it secure. Test endpoints with Postman first—nothing’s worse than debugging a live app with a flaky API. They’re the backbone of interactive web experiences. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">Progressive Web Apps 101</h3>
+        <p>Progressive Web Apps (PWAs) blend web and native app strengths. With service workers, they work offline, load instantly, and even send push notifications—all from a browser. Add a manifest.json for installability, and users can pin your site to their home screen. Google’s pushing PWAs hard, and tools like Workbox make implementation a breeze. It’s the future of accessible, app-like web experiences. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">Debugging Like a Pro</h3>
+        <p>Debugging is a web dev superpower. Chrome DevTools’ console logs and breakpoints catch JS errors fast, while the Elements tab exposes CSS quirks. Network tab? Perfect for slow API calls. For trickier bugs, `console.table()` or `debugger` statements save sanity. Log sparingly—too much noise hides the signal. Master these tools, and you’ll slash fix times in half. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">The Benefits of Web Accessibility</h3>
+        <p>Accessibility (a11y) isn’t optional—it’s essential. Semantic HTML and ARIA roles ensure screen readers understand your site. Add alt text to images and keyboard navigation for inclusivity. Tools like WAVE or axe catch gaps you miss. It’s not just ethics; accessible sites rank better and reach 15% more users. Build for everyone, always. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">Version Control with Git</h3>
+        <p>Git is non-negotiable for web devs. Track changes, collaborate, and rollback mistakes with commands like `commit`, `branch`, and `merge`. GitHub or GitLab host your repos and add CI/CD pipelines for automation. Stash uncommitted work when jumping tasks—it’s a lifesaver. Learn the basics, and you’ll never lose a line of code again. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">Sass: CSS with Benefits</h3>
+        <p>Sass turbocharges CSS with variables, nesting, and mixins. Define `$primary-color` once, reuse it everywhere—no more find-and-replace marathons. Nest selectors for cleaner code, and mixins handle repetitive styles like buttons. Compile it to vanilla CSS with a preprocessor, and you’re golden. It’s a small learning curve for a massive maintainability win. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">Web Security Basics</h3>
+        <p>Security keeps your web apps safe. HTTPS encrypts traffic, while input sanitization stops XSS attacks. Use Content Security Policy (CSP) to block rogue scripts. Store passwords with bcrypt, never plain text—hacks happen. OWASP’s Top 10 list guides you on risks like SQL injection. Skimp here, and you’re begging for trouble. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">Building Single-Page Apps</h3>
+        <p>Single-Page Apps (SPAs) load once and update dynamically—no full refreshes. React Router or Vue’s router handle navigation, while AJAX calls keep data flowing. They feel snappy but need SEO tweaks (server-side rendering helps). Bundle with Webpack or Vite for efficiency. SPAs shine for interactive dashboards or social platforms. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">The Role of Webpack</h3>
+        <p>Webpack bundles your web assets—JS, CSS, images—into optimized files. Modules mean cleaner imports, and loaders transform Sass or Babel on the fly. Plugins minify or split code for lazy loading. It’s complex at first, but a solid `webpack.config.js` cuts load times and scales projects. Modern web dev leans on it heavily. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">Testing Your Web Apps</h3>
+        <p>Testing catches bugs before users do. Jest for JS unit tests, Cypress for end-to-end flows—both are dev favorites. Mock APIs to isolate front-end logic, and snapshot tests catch UI regressions. Automate with CI tools like GitHub Actions. A little test setup now saves hours of firefighting later. <a href="#">See more...</a></p>
+      </article>
+      
+      <article>
+        <h3 class="style-font">Leveraging Browser DevTools</h3>
+        <p>Browser DevTools are your web dev Swiss Army knife. Chrome’s inspector tweaks CSS live, while the JavaScript console debugs on the fly with breakpoints and logs. The Performance tab profiles slow renders, and the Network panel flags hefty resources. Master shortcuts like Ctrl+Shift+J to open it fast—every second saved boosts your workflow. It’s built-in, free, and indispensable. <a href="#">See more...</a></p>
+      </article>
+    </main>
+    
+    <footer>
+      <p class="style-font">&copy; 2025 Abdullah Al Mamun. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

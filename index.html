@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- Essential tags/meta tags for SEO -->
+    <title>Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple personal portfolio website which has home page, projects page, articles page, form based contact page, semantic HTML, navigation bar, SEO meta tags on each page, and proper CSS styling.">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://gh-aam.github.io/personal-portfolio/">
+    
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <header>
+      <!-- Fixed div -->
+      <div class="fixed">
+        <!-- Logo and name -->
+        <ul class="ln">
+          <li><img src="logo.png" width="48px" height="48px" alt="Website logo"></li>
+          <li>Abdullah Al Mamun</li>
+        </ul>
+        
+        <!-- Navigation bar -->
+        <ul class="nav-bar">
+          <li><a href="index.html">Home&nbsp;&nbsp;</a></li>
+          <li><a href="projects.html">/&nbsp;&nbsp;Projects&nbsp;&nbsp;</a></li>
+          <li><a href="articles.html">/&nbsp;&nbsp;Articles&nbsp;&nbsp;</a></li>
+          <li><a href="contact.html">/&nbsp;&nbsp;Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Dynamic div -->
+      <div class="dynamic">
+        <h1 class="style-font">Frontend Developer</h1>
+      </div>
+    </header>
+    
+    <main>
+      <!-- Background -->
+      <section class="tech-background">
+        <!-- Projects -->
+        <article class="projects">
+          <h3 class="style-font">Projects</h3>
+          <ul>
+            <li><a href="projects.html#proj1" title="Click to see the project!">NewBreeze</a></li>
+            <li><a href="projects.html#proj2" title="Click to see the project!">Home Page Prototype</a></li>
+            <li><a href="projects.html#proj3" title="Click to see the project!">Color Scheme Viewer</a></li>
+            <li><a href="projects.html#proj4" title="Click to see the project!">Nature</a></li>
+            <li><a href="projects.html#proj5" title="Click to see the project!">Easy Diffusion</a></li>
+          </ul>
+        </article>
+        
+        <!-- Work experience -->
+        <article class="work-experience">
+          <h3 class="style-font">Work Experience</h3>
+          <div class="experience-divs">
+            <div class="expr-div1">
+              <h4 class="style-font style-font-new">roadmap.sh</h4>
+              <p>Solved some of the frontend projects. Finished many frontend technologies including HTML, CSS, Sass, Tailwind CSS, JavaScript, npm, Git & GitHub. Learning React is in progress.</p>
+              <a href="https://roadmap.sh/u/aam777">Visit my Profile</a>
+            </div>
+            
+            <div class="expr-div2">
+              <h4 class="style-font style-font-new">Open Source Works</h4>
+              <p>Contributed to 3 open source projects. Made many own projects including beginner-friendly <em>Arch Linux</em> distribution, <em>NewBreeze</em> and mobile first AI image generator, <em>Easy Diffusion</em>.</p>
+              <a href="https://github.com/gh-aam">Visit my GitHub Profile</a>
+            </div>
+          </div>
+        </article>
+        
+        <!-- Education -->
+        <article class="education">
+          <h3 class="style-font">Education</h3>
+          <h4>ISTT, Dhaka - 1216, Bangladesh</h4>
+          <p class="time-range"><i>B.Sc. in ECE, February, 2018 - August, 2023</i></i>
+          <p>Developed <em>Arch Linux</em> distribution, <em>NewBreeze</em>, and wrote a <a href="https://doi.org/10.1007/978-981-97-3937-0_14">conference paper</a> on it published by <em>Springer Nature</em>.</p>
+          <p>Courses I took:</p>
+          <ul>
+            <li>- Object Oriented Programming</li>
+            <li>- Assembly Language</li>
+            <li>- Digital Logic Design</li>
+            <li>- Computer Architecture and Organization</li>
+            <li>- Computer Networks</li>
+            <li>- Network Security</li>
+            <li>- Linear Algebra</li>
+            <li>- Probability and Statistics</li>
+            <li>- Calculus</li>
+          </ul>
+        </article>
+      </section>
+      
+      <!-- Fake and demo only reviews -->
+      <section class="reviews">
+        <h3 class="style-font">Reviews from my Teachers</h3>
+        <article class="testimonials">
+          <div>
+            <p><em>Abdullah Al Mamun</em> was a brilliant student; always stood out with his assignments.</p>
+            <p class="change-color">Nabil Hossain</p>
+            <p class="change-color academic-title">Assistant Professor, ISTT</p>
+          </div>
+          
+          <div>
+            <p><em>Abdullah Al Mamun</em> was a talented student. He was very good at programming and lab.</p>
+            <p class="change-color">Tanvir Chowdhury</p>
+            <p class="change-color academic-title">Senior Lecturer, ISTT</p>
+          </div>
+          
+          <div>
+            <p>I worked with <em>Abdullah Al Mamun</em> on some research projects. He was very good at research. He also was extremely good at minimizing plagiarism and grammatical error.</p>
+            <p class="change-color">Dr. Tanvir Ashrafi</p>
+            <p class="change-color academic-title">Head, IIT, JU</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    
+    <footer>
+      <p class="style-font">&copy; 2025 Abdullah Al Mamun. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
