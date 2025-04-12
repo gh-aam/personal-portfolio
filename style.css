@@ -76,7 +76,7 @@ article { padding: 0 var(--positive-space-3) var(--positive-space-2); }
   border-right: var(--border);
 }
 
-.expr-div1 {
+.fix-bp {
   border-bottom: var(--border);
   padding-bottom: var(--positive-space-3);
 }
@@ -99,12 +99,12 @@ article { padding: 0 var(--positive-space-3) var(--positive-space-2); }
 
 .testimonials div {
   border: var(--border);
-  border-radius: var(--positive-space-5);
+  border-radius: var(--positive-space-3);
   padding: var(--positive-space-1) var(--positive-space-3);
 }
 
 .academic-title { margin-top: var(--negative-space-2); }
-.change-color { color: gray; }
+.change-color { color: lightgray; }
 
 footer {
   text-align: center;
@@ -120,7 +120,7 @@ footer {
 
 .project-cards article {
   border: var(--border);
-  border-radius: var(--positive-space-5);
+  border-radius: var(--positive-space-3);
 }
 
 .project-cards h3 { text-align: center; }
@@ -130,8 +130,115 @@ footer {
 /* Mobile first */
 @media screen and (max-width: 600px) {
   .project-cards { grid-template-columns: 1fr; }
-  .testimonials { grid-template-columns: 1fr; }
   .tech-background { grid-template-columns: 1fr; }
+  
+  .testimonials {
+    grid-template-columns: 1fr;
+    margin-top: var(--negative-space-1);
+    padding: 0;
+    gap: var(--positive-space-1);
+  }
+  
+  .fixed {
+    flex-direction: column;
+  }
+  
+  .ln {
+    flex-direction: column;
+    font-weight: bold;
+  }
+  
+  .nav-bar {
+    padding-left: calc(var(--positive-space-2) + var(--positive-space-5));
+  }
+  
+  .nav-bar {
+    margin-top: calc(var(--negative-space-1) / 2);
+  }
+  
+  main {
+    margin-top: var(--negative-space-2);
+  }
+  
+  .projects {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .projects h3 {
+    border-bottom: var(--border);
+    margin-top: calc(var(--negative-space-1) / 5);
+    padding: var(--positive-space-1);
+  }
+  
+  .projects ul {
+    margin-top: -1.15rem;
+  }
+  
+  .projects li {
+    padding-bottom: var(--positive-space-1);
+    background-color: lightgray;
+  }
+  
+  .projects li:hover {
+    background-color: gray;
+  }
+  
+  .work-experience {
+    border: 0;
+    padding: 0;
+    border-bottom: var(--border);
+    margin-top: var(--negative-space-4);
+  }
+  
+  .work-experience h3 {
+    border-bottom: var(--border);
+    text-align: center;
+    padding: var(--positive-space-1);
+  }
+  
+  .experience-divs div {
+    background-color: lightgray;
+    padding: var(--positive-space-2);
+  }
+  
+  .experience-divs div:hover{
+    background-color: gray;
+  }
+  
+  .experience-divs {
+    margin-top: -1.15rem;
+  }
+  
+  .experience-divs h4, .experience-divs p, .experience-divs a {
+    margin-top: -0.5rem;
+  }
+  
+  .education {
+    padding: 0 var(--positive-space-2);
+    margin-top: var(--negative-space-1);
+  }
+  
+  .education h3 {
+    text-align: center;
+  }
+  
+  .reviews {
+    margin-top: var(--negative-space-1);
+  }
+  
+  .reviews h3 {
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  .testimonials div {
+    padding: 0 var(--positive-space-2);
+  }
+  
+  footer {
+    padding: var(--positive-space-1);
+  }
 }
 
 /* Tablet */
